@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- === this is the all css preset links === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="style/style.css"> <!--main style-->
+    <link rel="stylesheet" href="style/Headers.css"> <!--header styles-->
+    <link rel="stylesheet" href="style/nightMode.css"> <!--Darkmode styles-->
+    <link rel="stylesheet" href="style/Modal.css">
+    <link rel="stylesheet" href="style/spotCards.css">
+</head>
+<body onload="loader()">
+<!-- loader -->
+  <div id="loader" style="position: fixed;">
+    <video height="500px" width="500px" style="padding-top: 120px;" autoplay muted loop>
+      <source src="video/Airplane.mp4" type="video/mp4">
+    </video>
+<!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar">
+            <div class="percentage" id="percentageText">0%</div>
+        </div>
+    </div>
+</div>
+
+  <!--navigation-->
+  <div id="nav" style="display: none;">
+  <header id="header">
+    <div class="logo">
+      <h2>logo</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tourist">Tourist</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="#developers">Developers</a></li>
+      </ul>
+    </nav>
+  </header>
+  </div>
+
+  <!--main page-->
+  <div class="page-container" id="mainpage" style="display: none;">
+    <!--HOME CONTAINER-->
+    <div class="video-container" id="home">
+      <iframe width="1080" height="720" 
+              src="https://www.youtube.com/embed/SpQpWCcNIlg?autoplay=1&mute=1&loop=1&playlist=SpQpWCcNIlg&controls=0" 
+              title="Love the Philippines" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              playsinline>
+      </iframe>
+      <div class="content">
+        <h3>Explore The Amazing <br /> Tourist Destinations in the Philippines</h3>
+        <strong>Book Hotel Now!!!</strong> <br />
+        <button href="#Tourist">Book Now!</button>
+      </div>
+    </div>
+
+
+    <!----------------------------------------------------------------TOURIST---------------------------------------------------------------->
+
+
+
+<div id="tourist">
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div class="caption" id="caption"></div>
+  <div class="modal-paragraph1" id="modalParagraph1"></div>
+  <div class="modal-paragraph2" id="modalParagraph2"></div>
+  <div class="modal-paragraph3" id="modalParagraph3"></div>
+  <div class="modal-paragraph4" id="modalParagraph4"></div>
+</div>
+
+<!-- main contents -->
+
+<!-- BORACAY -->
+<div class="spot-container show">
+  <div class="boracay" id="boracay">
+      <div class="card card1 animate__animated">
+          <!--    this is modal image    -->
+          <img class="myImg" src="image/Boracay/Boracay.jpg" 
+          alt="B O R A C A Y" 
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card2 animate__animated">
+          <!--image on cards-->
+          <img class="myImg" src="image/Boracay/Motag Living Museum.jpg" 
+          alt="Motag Living Museum" 
+          text-line-1="According to the website safarway.com" 
+          text-line-2="Motag Living Museum is one of the Living Museus in Boracay is an interactive cultural exhibit showcasing traditional farming methods at work, weaving traditional crafts, local cooking, and sharing folk songs. You will see the past and culture of the Philippines come alive, and you will feel the splendor of the amazing place as you wander among the locals to learn about this wonderful culture. If you want to visit the place, make sure to wear light clothes, as the weather there is hot." 
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card3 animate__animated">
+          <!--image on cards-->
+          <img class="myImg" src="image/Boracay/boracay's fiesta food.jpg" 
+          alt="Boracay's Foods and Festivals" 
+          text-line-1="According to the www.boracayinsider.com" 
+          text-line-2="- Just like other fiestas in the Philippines, the event is filled with music, dances, laughter and fun. Songs, dancing and other shows are presented to make the event as lively as possible. The biggest attraction at the Boracay Food Festival of course, is the food. "
+          text-line-3="One of the highlights is the competition between some of the finest cooks on the island. Once their recipes are cooked, they are proudly displayed for all to enjoy. The food cooked ranges from traditional to modern Filipino dishes. Kare kare (ox’s tail with sauce), lumpiang ubod, pancit molo and other original Filipino delicacies are available. "
+          text-line-4="For the tourist, the food selection is truly a sight to behold. It gives them an opportunity to see the range and diversity of the food. Even Filipinos who are not familiar with all the dishes in the country will enjoy it."
+          style="width:100%;max-width:300px">   
+      </div>
+      <div class="card card4 animate__animated">
+          <!--image on cards-->
+          <img class="myImg" src="image/Boracay/boracay dance festival.jpeg" 
+          alt="Ati-atihan Festival" 
+          text-line-1="Ati-atihan Festival is one of festival in Boracay"
+          style="width:100%;max-width:300px"> 
+      </div>
+  </div>
+  <div class="content">
+      <h1 class="text animate__animated">B O R A C A Y</h1>
+      <p class="zRight animate__animated"><strong>Boracay, one of the top Islands in the Philippines,</strong></p>
+      <p class="zRight animate__animated">- is popular for its beaches and blessed with a long stretch of powdery white sand, crystal clear and azure waters, and a stunning sunset.</p>
+      <p class="zRight animate__animated">It is one of the most popular vacation destinations in the Philippines, offering a vibrant nightlife and a wide array of water activities.</p>
+  </div>
+</div>
+  
+<!--CHOCOLATE HILLS-->
+
+<div class="spot-container">
+  <div class="content">
+      <h1 class="text animate__animated">CHOCOLATE HILLS</h1>
+      <p class="zLeft animate__animated"><strong>Chocolate Hills is Located in Bohol Province,</strong></p>
+      <p class="zLeft animate__animated">Chocolate Hills are are a geological formation.</p>
+      <p class="zLeft animate__animated">There are at least 1,260 hills (and maybe more) spread over an area of more than 50 square kilometres (20 sq mi). They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name.</p>
+      <p class="zLeft animate__animated">These hills turn chocolate brown in the dry season, hence the name, and provide a picturesque landscape that is unique in the world.</p>
+  </div>
+  <div class="chocolate-hills" id="chocolate-hills">
+      <div class="card card5">
+          <!--image on cards-->
+          <img class="myImg" src="image/Chocolate Hills/Chocolate Hills.jpg" 
+          alt="Chocolate Hills" 
+          text-line-1="According to the Wikipedea"
+          text-line-2="There are at least 1,260 hills (and maybe more) spread over an area of more than 50 square kilometres (20 sq mi). They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name."
+          style="width:100%;max-width:300px"> 
+      </div>
+      <div class="card card6">
+          <!--image on cards-->
+          <img class="myImg" src="image/Chocolate Hills/chocolate hills vewing deck.jpg" 
+          alt="The view of Chocolate Hills on the Viewing Deck"
+          text-line-1="According to the World Heritage Convention" 
+          text-line-2="Chocolate Hills Natural Monument - Chocolate Hills and its immediate environs are relatively flat to rolling topography with elevation ranges from 100 m to 500 m above sea level. It has been declared the country's 3rd National Geological Monument on June 18, 1988 in recognition of its scientific value and geomorphic uniqueness. "  
+          style="width:100%;max-width:300px">  
+      </div>
+      <div class="card card7">
+          <!--image on cards-->
+          <img class="myImg" src="image/Chocolate Hills/chocolate hills festivals.jpg" 
+          alt="The Festival in Bohol"
+          text-line-1="Every year in March, the town of Carmen commemorates their foundation day with fun-filled activities starting with vibrant parade starting at Chocolate Hills followed by a day of festivities which involves singing, dancing and most of all enjoying all the local delicacies and specialties served.  Our dear students at  Valeriano A. Ganas High School were at the front and center of this vibrant celebration.  Hearts to Help Foundation funded their  ornate costume, stunning yellow bright dress with wings (!) inspired by the provincial bird, the Antolihao or the black-naped oriole." 
+          style="width:100%;max-width:300px">    
+      </div>
+      <div class="card card8">
+          <!--image on cards-->
+          <img class="myImg" src="image/Chocolate Hills/chocolate-hills-parade.jpg" 
+          alt="The aricultural parade in Parade"
+          text-line-1="based on the website onlyinyourisland.com" 
+          text-line-2="The Chocolate Hills Festival and Agri Fair is one of the most highly anticipated events in the province of Bohol, Philippines. Celebrating its 154th founding anniversary, the festival gathers the community of Carmen to showcase their agricultural bounties and celebrate their shared heritage, with this year’s theme being “One Carmen, One Community: Rising from Challenges and Adversaries.”"  
+          style="width:100%;max-width:300px">    
+      </div>
+  </div>
+</div>
+
+<!--PALAWAN-->
+
+<div class="spot-container">    
+  <div class="palawan" id="palawan">
+      <div class="card card9">
+          <!--image on cards-->
+          <img class="myImg" src="image/Palawan/Palawan.jpg" 
+          alt="Palawan"
+          text-line-1="this is the view of one of the island in palawan"
+          style="width:100%;max-width:300px">    
+      </div>
+      <div class="card card10">
+          <!--image on cards-->
+          <img class="myImg" src="image/Palawan/main-entrance-to-plaza quartel.jpg" 
+          alt="The Main entrance of The Plaza Quartel"
+          text-line-1="According to the www.tripadvisor.com.ph"
+          text-line-2="Plaza Cuartel - Plaza Cuartel is regarded as a memorial park and shrine to the 153 Americans who were massacred there in 1944 in what became known as the Palawan Massacre. It was originally a Spanish garrison then a penal colony under Japanese invasion"
+          style="width:100%;max-width:300px">    
+      </div>
+      <div class="card card11">
+          <!--image on cards-->
+          <img class="myImg" src="image/Palawan/Palawan-Baragatan-Festival.jpg" 
+          alt="Baragatan Festival"
+          text-line-1="- Baragatan Festival is the biggest convergence festival, a cultural event, and founding anniversary in the province of Palawan, Philippines held every June 23. Also called Baragatan sa Palawan Festival, it is a commemoration of the establishment of its first civil government after the end of the Philippine-American War."
+          style="width:100%;max-width:300px">    
+      </div>
+  </div>
+  <div class="content">
+      <h1 class="text animate__animated">PALAWAN</h1>
+      <p class="zRight animate__animated">Palawan is long and narrow and trends northeast-southwest between the South China and Sulu seas. It has a maximum width of 24 miles (39 km) and a mountainous backbone that runs its entire 270-mile (434-km) length, with Mount Mantalingajan (6,840 feet [2,085 metres]) in the south as its highest peak.</p>
+  </div>
+</div>
+
+<!--MAYON VOLCANO-->
+
+<div class="spot-container">    
+  <div class="content">
+      <h1 class="text animate__animated">MAYON VOLCANO</h1>
+      <p class="zLeft animate__animated">Mayon, also known as mayon volcano and mount mayon is an active stratovolcano in the province of Albay in Bicol, Philippines.</p>
+      <p class="zLeft animate__animated">A popular tourist spot renowned for its perfect cone, because of its symmetric conical shape, an is regarded as answered as sacred in Philippines Myhology</p>
+  </div>
+  <div class="mayon-volcano" id="mayon-volcano">
+      <div class="card card13">
+          <!--image on cards-->
+          <img class="myImg" src="image/Mayon Volcano/casagwa ruins bicol.jfif" 
+          alt="Casagwa Ruins"
+          text-line-1="This is the View of Mayon Volcano on Casagwa Ruins"
+          text-line-2="This is the main viewpoint are from the Casagwa Ruins of which are worth to visit."
+          text-line-2="The vast deposit of volcanic rock already tell the geological story of volcano."
+          style="width:100%;max-width:300px">    
+      </div>
+      <div class="card card14">
+          <!--image on cards-->
+          <img class="myImg" src="image/Mayon Volcano/daraga church.webp" 
+          alt="Daraga Church"
+          text-line-1="This is the another view of Mayon Volcano from Daraga Church."
+          text-line-2="The Daraga church is that has 400 year’s old, one of the oldest Church in Bicol Region."
+          style="width:100%;max-width:300px">    
+      </div>
+      <div class="card card15">
+          <!--image on cards-->
+          <img class="myImg" src="image/Mayon Volcano/magayon festival.webp" 
+          alt="Magayon Festival"
+          text-line-1="Magayon festival is a week-long celebration held anually in Legaspi City, Albay Philippines."
+          text-line-2="The Festival is tribute to the mayon volcano which is known for its perfect cone shape and is considered as a symbols of the Province."
+          style="width:100%;max-width:300px">        
+      </div>
+      <div class="card card16">
+          <!--image on cards-->
+          <img class="myImg" src="image/Mayon Volcano/pinangat.webp" 
+          alt="Pinangat"
+          text-line-1="PInangat is the one of the version of laing, a famous native chill-hot dish of a littlr town of Camalig, Albay which is blend of ground pork, coconut milk, diced shrimps, and chili wrapped in Gabi Leaves."
+          text-line-2="This dish is a well known among bicolano's because of its distictive taste that a Bicolano could perfects."
+          style="width:100%;max-width:300px">    
+      </div>
+  </div>
+</div>
+
+<!--VIGAN CITY-->
+
+<div class="spot-container">
+  <div class="vigan" id="vigan">
+      <div class="card card17">
+          <!--image on cards-->
+          <img class="myImg" src="image/Vigan/calle crisologo.jpg" 
+          alt="Calle Crisologo"
+          text-line-1="The best place to visit is Calle Crisologo, Bantay Bell Tower, Baluarte, Crisologo Museum, Hidden Garden, Paburnayan, Vigan Cathedral, Midoro Beach."
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card18">
+          <!--image on cards-->
+          <img class="myImg" src="image/Vigan/Plaza Salcedo and Plaza Burgos.jpg" 
+          alt="Plaza Salcedo and Plaza Burgos"
+          text-line-1="Near the White Baroque Vigan Cathedral are Plaza Salcedo Offering Fountain light shows and the Plaza Burgos, Known for its street and food stalls."
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card19">
+          <!--image on cards-->
+          <img class="myImg" src="image/Vigan/bantay bell tower.jfif" 
+          alt="Bantay Bell Tower"
+          text-line-1="This is the vigan city's Bantay Bell Tower"
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card20">
+          <!--image on cards-->
+          <img class="myImg" src="image/Vigan/Empanada and logganisa.jfif" 
+          alt="VIgan Foods Specialties"
+          text-line-1="Empanada and Longganisa"
+          text-line-2="Vigan cuisine offers a wide range of fineness and flavor. It is not limited to its well- renowned Vigan empanada, longganisa, and peculiarly distinctive dishes. They camouflage the idea of unsophistication and hold dearly the exquisite taste of its ingredients, which are primarily vegetables"
+          style="width:100%;max-width:300px">
+      </div>
+  </div>
+  <div class="content">
+      <h1 class="text animate__animated">V I G A N</h1>
+      <p class="zRight animate__animated">- vigan is a city in the Philippines on the west coast of Luzon Island. its for known for each preserves spanish colonial and Asian architecture.</p>
+      <p class="zRight animate__animated">Calle Crisologo dominates the Mestizo District, with its cobblestone streets, malecon, horse-shown carriage and rustic mansion.</p>
+  </div>
+</div>
+  
+<!--CAMIGUIN ISLAND-->
+
+<div class="spot-container">
+  <div class="content">
+      <h1 class="text animate__animated">CAMIGUIN ISLAND</h1>
+      <p class="zLeft animate__animated">Camiguin, also known as the island Born of Firem is home to Seven Volcanoes.</p>
+  </div>
+  <div class="camiguin-island" id="camiguin-island">
+      <div class="card card21">
+          <!--image on cards-->
+          <img class="myImg" src="image/Camiguin Island/camiguin island.webp" 
+          alt="Camiguin Island"
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card22">
+          <!--image on cards-->
+          <img class="myImg" src="image/Camiguin Island/mount hibok hibok.jpg" 
+          alt="Mount Hibok-Hibok with the Sunken Cemetery"
+          text-line-1="One of the Seven Volcano is a Mount Hibok-Hibok, is currently active. Thousand of Volcanic eruptions shaped the province's landscape, helping develop fertile soil, relaxing springs, and picturesque rock formations."
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card23">
+          <!--image on cards-->
+          <img class="myImg" src="image/Camiguin Island/camiguin old church.jpg" 
+          alt="Old Church Ruins"
+          text-line-1="Culural treasures as declared by the National Commision for Culture and the arts. The Spanish era watchtower, the old Burboun Church Ruins and the Sunken Cemetery."
+          style="width:100%;max-width:300px">  
+      </div>
+      <div class="card card24">
+          <!--image on cards-->
+          <img class="myImg" src="image/Camiguin Island/Lanzones Festival.jpg" 
+          alt="Lanzones Festival"
+          text-line-1="The colorful Lanzones Festival call Camiguin it's home. Already in its 40th year the Festivals gives thanks for beautiful harvest of sweet Lanzones which Camiguin is Famous for."
+          style="width:100%;max-width:300px">
+      </div>
+  </div>
+</div>
+
+<!--INTRAMUROS-->
+  
+<div class="spot-container">
+  <div class="intramuros" id="intramuros">
+      <div class="card card25">
+          <!--image on cards-->
+          <img class="myImg" src="image/intramuros/Intramuros.jpg" 
+          alt="Intramuros"
+          text-line-1=""
+          style="width:100%;max-width:300px">
+      </div>
+      <div class="card card26">
+        <img class="myImg" src="image/intramuros/Walled City.jpg" 
+        alt="The Walled City"
+        text-line-1="Intramuros, urban district and historic walled city within Metropolitan Manila, in the Philippines. The name, from the Spanish word meaning “within walls,” refers to the fortified city founded at the mouth of the Pasig River shortly after 1571 by the Spanish conquistador Miguel López de Legazpi."
+        text-line-2="the 'Walled City', is one of the oldest districts of Manila, built on the south bank of the Pasig River around 1571. It was built by the Spaniards – more specifically by Miguel Lopez de Legaspi – and is bound on all sides by moats and thick, high walls, with some over 6 meters high."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card27">
+        <img class="myImg" src="image/intramuros/Semana Santa.webp" 
+        alt="The Iconic Festivals of Intramuros"
+        text-line-1="1. Semana Santa (Holy Week)"
+        text-line-2="(When:) March or April (dates vary annually)
+        (What:) A significant religious observance featuring processions, ''pabasa'' (chanting of the Passion of Christ), and ''via crucis'' (stations of the cross).
+        (Highlight:) Good Friday processions and the re-enactment of the Passion of Christ."
+        text-line-3="2. Intramuros Open House and Cultural Events"
+        text-line-4="(When:)    =   Throughout the year, especially during Heritage Month in May and various historical commemorations.
+        (What:) The Intramuros Administration organizes cultural events, art exhibits, historical re-enactments, and performances to celebrate Filipino culture, history, and arts.
+        (Highlight:) Cultural fairs, lectures, traditional games, and Filipino folk dances."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card28">
+        <img class="myImg" src="image/intramuros/puto bumbong.avif" 
+        alt="The Iconic Foods of Intramuros"
+        text-line-1="1. Bibingka and Puto Bumbong"
+        text-line-2=" ''Bibingka'' is a fluffy rice cake topped with butter, salted egg, and coconut, meanwhile a ''Puto Bumbong'' is a purple-hued rice cake steamed in bamboo tubes, often topped with coconut, sugar, and butter"
+        text-line-3="2. Halo-Halo"
+        text-line-4="Halo-Halo is a popular dessert made with shaved ice, evaporated milk, and various sweetened ingredients like ube (purple yam), leche flan, sweet beans, and jellies."
+        style="width:100%;max-width:300px">
+      </div>
+  </div>
+  <div class="content">
+      <h1 class="text animate__animated">INTRAMUROS</h1>
+      <p class="zRight animate__animated">Intramuros, or the 'Walled City', is one of the oldest districts of Manila, built on the south bank of the Pasig River around 1571. It was built by the Spaniards – more specifically by Miguel Lopez de Legaspi – and is bound on all sides by moats and thick, high walls, with some over 6 meters high.</p>
+  </div>
+</div>
+  
+<!-- BANAUE RICE TERRACES -->
+
+<div class="spot-container">
+  <div class="content">
+      <h1 class="text animate__animated">BANAUE RICE TERRACES</h1>
+      <p class="zLeft animate__animated">The Banaue Rice Terraces are terraces that were carved into the mountains of Banaue, Ifugao, in the Philippines, by the ancestors of the Igorot people. The terraces are occasionally called the "Eighth Wonder of the World". It is commonly thought that the terraces were built with minimal equipment, largely by hand.</p>
+  </div>
+  <div class="banaue-rice-terraces" id="banaue-rice-terraces">
+      <div class="card card29">
+        <img class="myImg" src="image/Banaue Rice Terraces/Banaue Rice Terraces titles.jpg" 
+        alt="Banaue Rice Terraces"
+        text-line-1=""
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card30">
+        <img class="myImg" src="image/Banaue Rice Terraces/Banaue Rice Terraces.jfif" 
+        alt="Historical Sites"
+        text-line-1="The Banaue Rice Terraces are among the Philippines' top tourist destinations. Called the 8th Wonder of the Modern World by locals, these terraces are said to have been carved into the mountains and hillsides by the ancestors of the local indigenous Ifugao tribes, and are well over 2,000 years old."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card31">
+        <img class="myImg" src="image/Banaue Rice Terraces/Imbayah Festival.jfif" 
+        alt="Imbayah Festival"
+        text-line-1="One of the iconic and most celebrated festivals in Banaue is the Imbayah Festival, traditionally held in April. This festival is a vibrant display of Ifugao culture, featuring ethnic sports, parades, and rituals that highlight the community's unity and rich heritage."
+        text-line-2="Visitors can witness traditional practices, including wooden scooter races and cultural dances, set against the backdrop of the majestic rice terraces."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card32">
+        <img class="myImg" src="image/Banaue Rice Terraces/Hagabi Rice.jpg" 
+        alt="Hagabi Rice"
+        text-line-1="A Hagabi Rice ia a notable and Iconic dish that reflects the local cuisine is Hagabi Rice, offered at establishments like the Hagabi Restaurant. This hearty meal includes marinated chicken served with rice, egg, and sautéed mixed vegetables, embodying the healthy and flavorful culinary practices of the Ifugao people. Exploring these festivals and culinary delights provides a deeper appreciation of the cultural tapestry that surrounds the Banaue Rice Terraces"
+        style="width:100%;max-width:300px">
+      </div>
+  </div>
+</div>
+  
+<!-- Mount Apo-->
+
+<div class="spot-container">
+  <div class="mount-apo" id="mount-apo">
+      <div class="card card33">
+        <img class="myImg" src="image/Mount Apo/Mount Apo.jpg" 
+        alt="Mount Apo"
+        text-line-1=""
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card34">
+        <img class="myImg" src="image/Mount Apo/Spanish Colonization and Exploration.jfif" 
+        alt="Spanish Colonization and Exploration"
+        text-line-1=""
+        text-line-2="During the period of Spanish colonization in the Philippines (1521-1898), Mount Apo was a mysterious and largely unexplored region. The Spaniards referred to it as ''El Gran Apo'' The first recorded European ascent of Mount Apo occurred in 1880, led by Don Joaquin Rajal, a Spanish official, along with local tribesmen. The expedition was significant in the context of Spain's effort to explore and map the interior of Mindanao."
+        text-line-3="Historical Context: The successful climb marked the beginning of the mountain being recognized not only as an important site of indigenous culture but also as a geographical feature of interest to colonizers."
+        text-line-4="Citation == Funtecha, H. (2000). “Mount Apo: The Grandfather of Philippine Mountains”. Philippine Panorama, Manila Bulletin."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card35">
+        <img class="myImg" src="image/Mount Apo/Sinigang na Baboy.jpg" 
+        alt="Sinigang na Baboy (Pork Sinigang)"
+        text-line-1=" This is a sour soup made with pork, tamarind, and various vegetables. Sinigang is a staple Filipino dish enjoyed throughout the country, including the Mount Apo region."
+        style="width:100%;max-width:300px">
+      </div>
+      <div class="card card36">
+        <img class="myImg" src="image/Mount Apo/kadayawan festival.webp" 
+        alt="Kadayawan Festival"
+        text-line-1="Although not exclusive to Mount Apo, Kadayawan Festival is celebrated in Davao City to honor the indigenous culture and the bountiful harvest of the region."
+        text-line-2="The Activities in this festival includes street dancing, floral floats, and exhibits that highlight the heritage of various indigenous groups in the area, including those surrounding Mount Apo."
+        style="width:100%;max-width:300px">
+      </div>
+  </div>
+  <div class="content">
+      <h1 class="text animate__animated">MOUNT APO</h1>
+      <p class="zRight animate__animated">Mount Apo is the highest mountain peak in the Philippines, with an elevation of 2,954 meters above sea level. A large solfataric, dormant stratovolcano, it is part of the Apo-Talomo Mountain Range of Mindanao island.</p>
+  </div>
+  </div>
+
+</div><!-- End of Tourist Container -->
+    </div>
+    <div id="hotels">
+      <h1>test</h1>
+    </div>
+    <div id="contact">
+      <h1>test</h1>
+    </div>
+
+</body>
+</html>
+
+<!--javascript links-->
+<script src="script/app.js"></script> <!--main javascript-->
+<script src="script/header.js"></script> <!--header main-->
+<script src="script/Modal.js"></script>
+<script src="script/animateCss.js"></script>
