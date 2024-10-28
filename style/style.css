@@ -1,0 +1,115 @@
+/*main style*/
+/*general settongs*/
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: none;
+    flex-wrap: wrap;
+}
+
+body{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*content page*/
+#tourist ,#hotels ,#contact{
+    height: 100vh;
+    width: 100%;
+    color: black;
+    font-family: arial black;
+    background-color: blue;
+}
+
+/*loaders*/
+#loader{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*Progress Bar*/
+.progress-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    align-items: center;
+    width: 100%; /* Change this to simulate progress */
+    height: 50px;
+    background-color: #76c7c0;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    border-radius: 25px;
+    transition: width 0.5s;
+}
+
+/*this can display 0 - 100%*/
+.percentage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+/*HOMEPAGE*/
+/*this is the video styles that ensure the container covers the full screen */
+.page-container, .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Full viewport height */
+    flex-wrap: wrap;
+}
+
+.video-container{
+    transform: scale(1.5);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    transform: translate(-40%, -50%);
+    pointer-events: none; /*disable interactions*/
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Style for the page content */
+#home .content {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+    transform: scale(0.9);
+    text-shadow: 2px 2px 3pc 3pc black;
+}
+
+h3 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*  -END HOMEPAGE-  */
+
+/* -TOURIST- */
+#tourist{
+    margin-top: 35%;
+    height: auto;
+}

@@ -1,0 +1,30 @@
+/* this is the header style preset*/
+header{
+    background-color: none;
+    color: #E8bcb9;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    transition: 0.3s;
+    height: 90px;
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+} 
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: Arial black, Helvetica, sans-serif;
+    color: white;
+}
