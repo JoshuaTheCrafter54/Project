@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
 
     <!-- === this is the all css preset links === -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!--Animation Preset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- W3SCHOOLS PRESET-->
 
     <link rel="stylesheet" href="style/style.css"> <!--main style-->
     <link rel="stylesheet" href="style/Headers.css"> <!--header styles-->
     <link rel="stylesheet" href="style/nightMode.css"> <!--Darkmode styles-->
-    <link rel="stylesheet" href="style/Modal.css">
-    <link rel="stylesheet" href="style/spotCards.css">
+    <link rel="stylesheet" href="style/Modal.css"> <!--Photo Popup-->
+    <link rel="stylesheet" href="style/spotCards.css"> <!--Card Modification for photos-->
+    <link rel="stylesheet" href="style/FlipBox.css">
 </head>
 <body onload="loader()">
 <!-- loader -->
@@ -31,13 +34,11 @@
   <!--navigation-->
   <div id="nav" style="display: none;">
   <header id="header">
-    <div class="logo">
-      <h2>logo</h2>
-    </div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#tourist">Tourist</a></li>
+        <a href="index.html" id="logo"><img src="image/logo.png" style="border-radius: 50%;" width="auto" height="70px"></a>
         <li><a href="#about_us">About Us</a></li>
         <li><a href="#developers">Developers</a></li>
       </ul>
@@ -447,22 +448,178 @@
       <h1 class="text animate__animated">MOUNT APO</h1>
       <p class="zRight animate__animated">Mount Apo is the highest mountain peak in the Philippines, with an elevation of 2,954 meters above sea level. A large solfataric, dormant stratovolcano, it is part of the Apo-Talomo Mountain Range of Mindanao island.</p>
   </div>
+</div>
+</div><!-- End of Tourist Container -->
+
+<!--Developer pages-->
+
+<div id="developers">
+  <h1>Developers and Members</h1>
+  
+  <!--This is the Profile per Developers-->
+  <div class="main-container">
+     <div class="profile-container">
+       <div class="profile-photo">
+         <img src="image/Person Profile/devera.jfif" alt="DE VERA" height="200px" width="200px">
+        </div>
+        <div class="profile-name">
+          <strong>Name: <span>John Paul De Vera</span></strong>
+        </div>
+        <div class="profile-name">
+          <strong>Age: <span>20</span></strong>
+        </div>
+        <div class="profile-name">
+          <strong>Emails: <span>johnpauldevera1014@gmail.com</span></strong>
+        </div>
+      </div>
+      
+      <div class="profile-container">
+        <div class="profile-photo">
+          <img src="image/Person Profile/haroo.jfif" alt="BAUTISTA" width="90px">
+        </div>
+        <div class="profile-name">
+          <strong>Name: <span>Cashmier Bautista</span></strong>
+        </div>
+        <div class="profile-name">
+          <strong>Age: <span>19</span></strong>
+        </div>
+        <div class="profile-name">
+          <strong>Emails: <span>cashmierbautista07@gmail.com</span></strong>
+        </div>
+      </div>
+
+      <div class="profile-container">
+         <div class="profile-photo">
+           <img src="image/Person Profile/JoshuaSanJuan.jpg" alt="SAN JUAN" height="200px" width="200px">
+         </div>
+         <div class="profile-name">
+           <strong>Name: <span>Joshua San Juan</span></strong>
+         </div>
+         <div class="profile-name">
+           <strong>Age: <span>21</span></strong>
+         </div>
+         <div class="profile-name">
+           <strong>Emails: <span>joshuasanjuangaming@gmail.com</span></strong>
+         </div>
+      </div>
+      
+ <div class="profile-container">
+  <div class="profile-photo">
+    <img src="image/Person Profile/tabangcura02.jfif" alt="TABANGCURA" width="90px">
+  </div>
+  <div class="profile-name">
+    <strong>Name: <span>Angelo Tabangcura</span></strong>
+  </div>
+  <div class="profile-name">
+    <strong>Age: <span>???</span></strong>
+  </div>
+  <div class="profile-name">
+    <strong>Emails: <span>???</span></strong>
+  </div>
+</div>
+
+<div class="profile-container">
+    <div class="flip-box" id="flipBox">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <!--Front Flip Box Content-->
+          <div class="profile-container">
+            <div class="profile-photo">
+              <img src="image/Person Profile/Abid01.jpg" alt="ABID" height="200px" width="200px">
+            </div>
+            <div class="profile-name">
+              <strong>Name: <span>Jay Ar Abid</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Age: <span>21</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Emails: <span>abidjay05@gmail.com</span></strong>
+            </div>
+        </div>
+        </div>
+        <div class="flip-box-back">
+          <!--Back Flip Box Content-->
+          <div class="profile-container">
+            <div class="profile-photo">
+              <img src="image/Person Profile/abid02.jfif" alt="ABID" height="200px" width="200px">
+            </div>
+            <div class="profile-name">
+              <strong>Name: <span>Jay Ar Abid</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Age: <span>21</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Emails: <span>abidjay05@gmail.com</span></strong>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-</div><!-- End of Tourist Container -->
+  <div class="profile-container">
+    <div class="flip-box" id="flipBox2">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <!--Front Flip Box Content-->
+          <div class="profile-container">
+            <div class="profile-photo">
+              <img src="image/Person Profile/Salvador01.jpg" alt="SALVADOR" height="200px" width="200px">
+            </div>
+            <div class="profile-name">
+              <strong>Name: <span>David John Salvador</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Age: <span>21</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Emails: <span>djohnsalvador23@gmail.com</span></strong>
+            </div>
+        </div>
+        </div>
+        <div class="flip-box-back">
+          <!--Back Flip Box Content-->
+          <div class="profile-container">
+            <div class="profile-photo">
+              <img src="image/Person Profile/Salvador02.jfif" alt="SALVADOR" height="200px" width="200px">
+            </div>
+            <div class="profile-name">
+              <strong>Name: <span>David John Salvador</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Age: <span>21</span></strong>
+            </div>
+            <div class="profile-name">
+              <strong>Emails: <span>djohnsalvador23@gmail.com</span></strong>
+            </div>
+        </div>
+        </div>
+      </div>
     </div>
-    <div id="hotels">
-      <h1>test</h1>
-    </div>
-    <div id="contact">
-      <h1>test</h1>
-    </div>
+  </div>
 
+   <div class="profile-container">
+    <div class="profile-photo">
+      <img src="image/Person Profile/vicente.jpg" alt="DE VERA" height="200px" width="200px">
+     </div>
+     <div class="profile-name">
+       <strong>Name: <span>John Carlo Vicente</span></strong>
+     </div>
+     <div class="profile-name">
+       <strong>Age: <span>23</span></strong>
+     </div>
+     <div class="profile-name">
+       <strong>Emails: <span>jancarlovicente62@gmail.com</span></strong>
+     </div>
+   </div>
+</div>
 </body>
 </html>
 
 <!--javascript links-->
 <script src="script/app.js"></script> <!--main javascript-->
 <script src="script/header.js"></script> <!--header main-->
-<script src="script/Modal.js"></script>
-<script src="script/animateCss.js"></script>
+<script src="script/Modal.js"></script> <!--Modal Popup-->
+<script src="script/animateCss.js"></script> <!--Animate Css Js-->
